@@ -1,3 +1,12 @@
+#==How to clone an existing remote repository==#
+
+git clone <RepoUrl> <dir>
+
+git clone https://github.com/mmartin9766/TestRepo TestRepo
+cd TestRepo
+
+
+
 # Get help #=============================#
 git help;
 
