@@ -1,0 +1,102 @@
+# Get help #=============================#
+git help;
+
+git help $verb
+git $verb --help
+
+
+#=====================================#
+git --version;
+
+# Set config values #
+git config --global user.name "InspectorChocolatey";
+git config --global user.email "nicholasjacquet2@gmail.com";
+
+
+git config --list;
+
+
+#===Initialize a repository from existing local code#==#
+
+git init ; # creates a .git file
+
+git status
+
+New-Item .gitignore
+git add .gitignore  #(if there are personal files that you do not want tracked)
+
+
+
+git add -A # add files to the staging area
+
+git reset # remove all files form the staging area
+
+
+
+#=====<The first commit>========================#
+
+
+git commit -m "This is the initial commit"
+
+
+git log
+
+
+
+
+#=====<Cloning a remote repository>========================#
+
+git clone <url> <wheretocloneto>
+
+
+
+#=====<getting info about a remote repository>========================#
+git remote -v
+git branch -a
+
+
+
+
+
+#=====<Pushing to a remote repository>========================#
+
+git diff
+
+# origin is the name of the remote repository
+# master is the name of the branch
+
+git pull <origin> master   # pulls down any recent changes from master
+git push origin master #
+
+
+
+#========<create a branch for your desired feature>================#
+               (So that you can begin doing your work on that branch)
+
+
+git branch calc-divide
+git checkout calc-divide
+
+
+#=======<after commit, push branch to remote>====================#
+
+git push -u <origin> calc-divide # push you calc-divide branch the the remote repository
+
+
+
+
+#======<Merging a branch>===================================#
+
+git checkout master
+
+git pull origin master
+
+git branch --merged
+
+git merge calc-divide
+
+git push origin master
+
+git remote add origin https://github.com/mmartin9677/TestRepo.git
+
+git push -u origin master
