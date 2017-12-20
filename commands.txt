@@ -18,8 +18,8 @@ git $verb --help
 git --version;
 
 # Set config values #
-git config --global user.name "InspectorChocolatey";
-git config --global user.email "nicholasjacquet2@gmail.com";
+git config --global user.name "MMartin9677";
+git config --global user.email "mikem@generalparts.com";
 
 
 git config --list;
