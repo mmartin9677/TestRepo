@@ -1,0 +1,20 @@
+git remote add origin https://github.com/InspectorChocolatey/HelpDesk.git
+
+git status
+
+git branch --list
+
+git checkout Nick
+
+git commit -a
+
+git add -A
+
+git pull origin Nick
+git push -u origin Nick
+
+
+
+# err: Updates were rejected because the tip of your current branch is behind
+# url: https://stackoverflow.com/questions/10298291/cannot-push-to-github-keeps-saying-need-merge
+git push -f origin <branch>
